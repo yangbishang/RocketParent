@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Configuration
-@ComponentScan(basePackages = {"com.yy.order.*"})//扫描的路径
-@MapperScan(basePackages = "com.yy.order.mapper")//
+@MapperScan(basePackages = "com.bfxy.order.mapper")
+@ComponentScan(basePackages = {"com.yy.order.*", "com.yy.order.config.*"})
 public class MainConfig {
 
 }

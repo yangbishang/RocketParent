@@ -5,9 +5,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+
 @Configuration
-@ComponentScan(basePackages = {"com.yy.store.*"})//扫描的路径
-@MapperScan(basePackages = "com.yy.store.mapper")//
+@MapperScan(basePackages = "com.yy.store.mapper")
+@ComponentScan(basePackages = {"com.yy.store.*", "com.yy.store.config.*"})
 public class MainConfig {
 
 }
